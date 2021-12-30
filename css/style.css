@@ -40,14 +40,19 @@ body {
 }
 @media (min-width: 1024px) {
   .container {
-    gap: 8rem;
-    margin-bottom: 5rem;
+    gap: 9rem;
+    margin-bottom: 7.9rem;
     justify-content: center;
   }
 }
 
 .calculator__logo {
   margin-top: 5rem;
+}
+@media (min-width: 1024px) {
+  .calculator__logo {
+    margin-top: 0rem;
+  }
 }
 
 .calculator {
@@ -65,6 +70,8 @@ body {
 @media screen and (min-width: 1024px) {
   .calculator {
     flex-direction: row;
+    padding: 3rem;
+    gap: 3rem;
   }
 }
 
@@ -78,6 +85,8 @@ body {
 @media screen and (min-width: 1024px) {
   .calculator__input {
     flex: 0 1 50%;
+    gap: 3.8rem;
+    padding: 1.7rem 1.6rem 1.6rem;
   }
 }
 
@@ -85,19 +94,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
+}
+
+.input__bill-container::before {
+  content: url(../images/icon-dollar.svg);
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  z-index: 2;
 }
 
 .input__bill--custom {
   width: 100%;
-  position: relative;
-}
-
-.input__bill--custom::before {
-  content: url(../images/icon-dollar.svg);
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
 }
 
 .input__tip-container {
@@ -120,6 +129,7 @@ body {
 @media screen and (min-width: 1024px) {
   .input__tip-options {
     grid-template-columns: repeat(3, minmax(5rem, 1fr));
+    grid-template-rows: repeat(2, 5rem);
   }
 }
 
@@ -144,6 +154,12 @@ body {
   cursor: pointer;
   padding: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  .input__tip--custom {
+    padding: 0rem;
+    text-align: center;
+  }
+}
 .input__tip--custom::placeholder {
   color: var(--dark-grayish-cyan);
 }
@@ -152,6 +168,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
+}
+
+.input__people-container::before {
+  content: url(../images/icon-person.svg);
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  z-index: 2;
 }
 
 .calculator__output {
@@ -165,6 +190,8 @@ body {
 @media screen and (min-width: 1024px) {
   .calculator__output {
     flex: 0 1 50%;
+    padding: 4.8rem 4rem 4.2rem;
+    gap: 3rem;
   }
 }
 
@@ -216,6 +243,11 @@ body {
   padding: 1rem;
 
   margin-top: 1.2rem;
+}
+@media screen and (min-width: 1024px) {
+  .calculator__reset {
+    margin-top: auto;
+  }
 }
 
 /* UTILITY */
