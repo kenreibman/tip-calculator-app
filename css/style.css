@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 4rem;
 }
 @media (min-width: 1024px) {
@@ -64,8 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-
-  transition: flex-direction 250ms ease-in;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 1024px) {
   .calculator {
@@ -140,6 +140,16 @@ body {
   color: var(--white);
   border: none;
   border-radius: 0.5rem;
+
+  transition: all 0.5s ease;
+}
+.input__tip-option:hover {
+  background: rgb(121, 226, 214);
+}
+
+.input__tip-option--active {
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
 }
 
 .input__tip--custom {
@@ -150,7 +160,7 @@ body {
   color: var(--very-dark-cyan);
   caret-color: #26c0ab;
   font-size: 2.4rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   padding: 2rem;
 }
@@ -243,11 +253,17 @@ body {
   padding: 1rem;
 
   margin-top: 1.2rem;
+
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 1024px) {
   .calculator__reset {
     margin-top: auto;
   }
+}
+
+.calculator__reset:hover {
+  background: rgb(159, 232, 223);
 }
 
 /* UTILITY */
