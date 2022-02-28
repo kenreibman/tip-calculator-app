@@ -39,8 +39,6 @@ tipButtons.forEach((button) => {
   });
 });
 
-tipButtons[2].click();
-
 function setCustomTipValue() {
   tipValue = parseFloat(tipInput.value / 100);
 
