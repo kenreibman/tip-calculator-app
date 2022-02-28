@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --strong-cyan: hsl(172, 67%, 45%);
@@ -10,7 +10,7 @@
   --light-grayish-cyan-2: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
 
-  --ff-main: "Space Mono", monospace;
+  --ff-main: 'Space Mono', monospace;
 }
 
 html {
@@ -179,6 +179,23 @@ body {
   flex-direction: column;
   gap: 1rem;
   position: relative;
+}
+
+.input__people-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__people--error {
+  transition: opacity 0.3s ease;
+  color: indianred;
+  font-size: 1.6rem;
+  opacity: 0;
+}
+
+.input__people--error-show {
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
 .input__people-container::before {

@@ -24,7 +24,7 @@
 
         <div class="input__bill-container">
           <h1 class="input__bill-header header-style">Bill</h1>
-          <input class="input__bill--custom custom-style" autoComplete="off" type="text" name="bill-input" id="bill-input" placeholder="0">
+          <input class="input__bill--custom custom-style" autoComplete="off" type="number" name="bill-input" id="bill-input" placeholder="0">
         </div>
 
         <div class="input__tip-container">
@@ -35,13 +35,16 @@
             <button class="input__tip-option">15%</button>
             <button class="input__tip-option">25%</button>
             <button class="input__tip-option">50%</button>
-            <input class="input__tip--custom" autoComplete="off" type="text" name="tip-input" id="tip-input" placeholder="Custom">
+            <input class="input__tip--custom" autoComplete="off" type="number" name="tip-input" id="tip-input" placeholder="Custom">
           </div> 
         </div>
 
         <div class="input__people-container">
-          <h2 class="input__people-header header-style">Number of People</h2>
-          <input class="input__people--custom custom-style" autoComplete="off" type="number" name="bill-input" id="bill-input" placeholder="0">
+          <div class="input__people-header-container">
+            <h2 class="input__people-header header-style">Number of People</h2>
+            <p class="input__people--error">Can't be zero</p>
+          </div>
+          <input class="input__people--custom custom-style" autoComplete="off" type="number" name="people-input" id="people-input" value="1" placeholder="1">
         </div>
 
       </section>
