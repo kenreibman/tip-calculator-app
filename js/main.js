@@ -13,17 +13,11 @@ let billValue = 0.0;
 let tipValue = 0.15;
 let peopleValue = 1;
 
-// create billinput
-// Grad the bill input and make it print it's value
-
-// Add an event listener of input with the function setBillValue
-
 billInput.addEventListener('input', setBillValue);
 tipInput.addEventListener('input', setCustomTipValue);
 peopleInput.addEventListener('input', setPeopleValue);
 calculatorReset.addEventListener('click', reset);
 
-// creat setbillvalue function
 function setBillValue() {
   billValue = parseFloat(billInput.value);
   calculateTip();
@@ -82,6 +76,7 @@ function calculateTip() {
   }
 }
 
+// Reset function
 function reset() {
   billInput.value = '0';
   setBillValue();
@@ -89,15 +84,3 @@ function reset() {
   peopleInput.value = '1';
   setPeopleValue();
 }
-
-// select reset button element
-// add a reset button event listener that listens for a click and has a function reset()
-
-// create a reset function
-// bill.value = '0.0'
-// run setBillValue() function
-
-// click tipButtons[2].click() --> clicks the 15% by default
-
-// set people.value to 1
-// run setpeopelvalue() function
