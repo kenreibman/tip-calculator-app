@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app
 
-![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
+![Tip Calculator](./design/desktop-preview.jpg)
 
 # 🔥 Sunnyside Landing Page KEN REIBMAN
 
