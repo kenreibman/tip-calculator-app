@@ -4,4 +4,4 @@
 
 # 🔥 Tip Calculator
 
-## [LIVE SITE](https://kenreibman.github.io/ping-coming-soon/)
+## [LIVE SITE](https://kenreibman.github.io/tip-calculator-app/)
